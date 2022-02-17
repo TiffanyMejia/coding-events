@@ -11,10 +11,15 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th></th>
     </tr>
     <tr th:each="event : ${events}">
         <td th:text="${event.name}"></td>
-        <td th:text="${event.description}"></td>
+        <td th:text="${event.description}">
+        <td>
+<!--        <a th:href="@{/events/edit/' + event.id}">Edit</a>-->
+            <a th:href="@{/events/edit/{id}(id=${event.id})}">Edit</a>
+        </td>
     </tr>
 </table>
 
