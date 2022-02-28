@@ -1,5 +1,6 @@
 package org.launchcode.codingevents.models;
 
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -10,6 +11,7 @@ import java.util.Objects;
 /**
  * Created by Chris Bay
  */
+
 public class Event {
 
     private int id;
